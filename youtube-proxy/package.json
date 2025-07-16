@@ -8,8 +8,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "ytsr": "^3.8.4"
-  }
+  "description": ""
 }
