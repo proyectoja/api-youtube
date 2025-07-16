@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0",
     "ytsr": "^3.8.4"
   }
 }
