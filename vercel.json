@@ -1,15 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/buscar",
-      "dest": "index.js"
-    }
-  ]
+  "builds": [{ "src": "api/buscar.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/buscar", "dest": "api/buscar.js" }]
 }
