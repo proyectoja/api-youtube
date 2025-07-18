@@ -1,8 +1,0 @@
-{
-  "name": "api-youtube",
-  "version": "1.0.0",
-  "type": "commonjs",
-  "dependencies": {
-    "ytsr": "^3.10.0"
-  }
-}
