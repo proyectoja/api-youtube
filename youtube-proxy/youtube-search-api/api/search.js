@@ -1,13 +1,12 @@
 const ytsr = require('ytsr');
 
 module.exports = async (req, res) => {
-  // Permitir CORS para cualquier origen (ojo: para producción quizá quieres restringir esto)
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  // Permitir métodos y headers que necesites (opcional)
+  // Agregar headers CORS
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Permite todos los orígenes
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-  // Manejar preflight OPTIONS request (para CORS)
+  // Responder a preflight OPTIONS
   if (req.method === 'OPTIONS') {
     return res.status(204).end();
   }
